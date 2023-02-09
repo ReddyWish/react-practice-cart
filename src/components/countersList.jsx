@@ -33,7 +33,7 @@ const CountersList = () => {
   }
 
   const handleDecrement = (val, id) => {
-    setCounters(counters.map(prevState => (
+    setCounters(counters.map((prevState) => (
       {
         ...prevState,
         value: prevState.id === id ? prevState.value - 1 : prevState.value,
@@ -43,7 +43,7 @@ const CountersList = () => {
 
   return (
     <>
-      {counters.map(item => <Counter
+      {counters.map(item => <Counter key={item.id}
         {
         ...item
         }

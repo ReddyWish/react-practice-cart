@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 
 const Counter = ({value, name, id, onDelete, onIncrement, onDecrement}) => {
-  console.log(id)
 
 
   const formatCount = () => {
